@@ -14,27 +14,32 @@ def xplore(data):
     print('------------------------------------')
     print('The fist 5 entries of your dataset are:\n')
     print(data.head()) #printing the first 5 entries of the dataset
-    print('')
+    print('\n')
+
+    rint('------------------------------------')
+    print('The last 5 entries of your dataset are:\n')
+    print(data.tail()) #printing the last 5 entries of the dataset
+    print('\n')
 
     print('------------------------------------')
     print('The description of you dataset is:\n')
     print(data.describe) #printing a descriptipn of the dataset
-    print('')
+    print('\n')
 
     print('------------------------------------')
     print('The total number of null values from individual columns of your data set are:\n')
     print(data.isnull().sum()) #printing the total number of null values in the dataset
-    print('')
+    print('\n')
 
     print('------------------------------------')
     print('The shape of your dataset in the order of rows and columns is:\n')
     print(data.shape) #printing the shape of the dataset
-    print('')
+    print('\n')
 
     print('------------------------------------')
     print('The features of your dataset are:\n')
     print(data.columns) #printing features
-    print('')
+    print('\n')
 
     print('------------------------------------')
 
