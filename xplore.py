@@ -52,6 +52,11 @@ def xplore(data):
     print('\n')
 
     print('------------------------------------')
+    print('The values in your dataset are:\n')
+    print(data.values) #printing values
+    print('\n')
+
+    print('------------------------------------')
 
 
 data = pd.read_csv('fifa_ranking.csv')
