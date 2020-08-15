@@ -34,12 +34,12 @@ Navigate to the test.py file after installing the package and run the code in th
 ------------------------------------
 The fist 5 entries of your dataset are:
 
-   rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
-0     1      Germany          GER           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-1     2        Italy          ITA           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-2     3  Switzerland          SUI           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-3     4       Sweden          SWE           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-4     5    Argentina          ARG           0.0  ...                 0.0                      0.0       CONMEBOL  1993-08-08
+   rank country_full country_abrv  total_points  previous_points  ...  two_year_ago_weighted  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
+0     1      Germany          GER           0.0               57  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08  
+1     2        Italy          ITA           0.0               57  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08  
+2     3  Switzerland          SUI           0.0               50  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08  
+3     4       Sweden          SWE           0.0               55  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08  
+4     5    Argentina          ARG           0.0               51  ...                    0.0                 0.0                      0.0       CONMEBOL  1993-08-08  
 
 [5 rows x 16 columns]
 
@@ -47,12 +47,12 @@ The fist 5 entries of your dataset are:
 ------------------------------------
 The last 5 entries of your dataset are:
 
-       rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
-57788   206     Anguilla          AIA           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
-57789   206      Bahamas          BAH           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
-57790   206      Eritrea          ERI           0.0  ...                 0.0                      0.0            CAF  2018-06-07
-57791   206      Somalia          SOM           0.0  ...                 0.0                      0.0            CAF  2018-06-07
-57792   206        Tonga          TGA           0.0  ...                 0.0                      0.0            OFC  2018-06-07
+       rank country_full country_abrv  total_points  previous_points  ...  two_year_ago_weighted  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
+57788   206     Anguilla          AIA           0.0                0  ...                    0.0                 0.0                      0.0       CONCACAF  2018-06-07
+57789   206      Bahamas          BAH           0.0                0  ...                    0.0                 0.0                      0.0       CONCACAF  2018-06-07
+57790   206      Eritrea          ERI           0.0                0  ...                    0.0                 0.0                      0.0            CAF  2018-06-07
+57791   206      Somalia          SOM           0.0                0  ...                    0.0                 0.0                      0.0            CAF  2018-06-07
+57792   206        Tonga          TGA           0.0                0  ...                    0.0                 0.0                      0.0            OFC  2018-06-07
 
 [5 rows x 16 columns]
 
@@ -60,18 +60,18 @@ The last 5 entries of your dataset are:
 ------------------------------------
 Stats on your dataset:
 
-<bound method NDFrame.describe of        rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
-0         1      Germany          GER           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-1         2        Italy          ITA           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-2         3  Switzerland          SUI           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-3         4       Sweden          SWE           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
-4         5    Argentina          ARG           0.0  ...                 0.0                      0.0       CONMEBOL  1993-08-08
-...     ...          ...          ...           ...  ...                 ...                      ...            ...         ...
-57788   206     Anguilla          AIA           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
-57789   206      Bahamas          BAH           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
-57790   206      Eritrea          ERI           0.0  ...                 0.0                      0.0            CAF  2018-06-07
-57791   206      Somalia          SOM           0.0  ...                 0.0                      0.0            CAF  2018-06-07
-57792   206        Tonga          TGA           0.0  ...                 0.0                      0.0            OFC  2018-06-07
+<bound method NDFrame.describe of        rank country_full country_abrv  total_points  previous_points  ...  two_year_ago_weighted  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
+0         1      Germany          GER           0.0               57  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08
+1         2        Italy          ITA           0.0               57  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08
+2         3  Switzerland          SUI           0.0               50  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08
+3         4       Sweden          SWE           0.0               55  ...                    0.0                 0.0                      0.0           UEFA  1993-08-08
+4         5    Argentina          ARG           0.0               51  ...                    0.0                 0.0                      0.0       CONMEBOL  1993-08-08
+...     ...          ...          ...           ...              ...  ...                    ...                 ...                      ...            ...         ...
+57788   206     Anguilla          AIA           0.0                0  ...                    0.0                 0.0                      0.0       CONCACAF  2018-06-07
+57789   206      Bahamas          BAH           0.0                0  ...                    0.0                 0.0                      0.0       CONCACAF  2018-06-07
+57790   206      Eritrea          ERI           0.0                0  ...                    0.0                 0.0                      0.0            CAF  2018-06-07
+57791   206      Somalia          SOM           0.0                0  ...                    0.0                 0.0                      0.0            CAF  2018-06-07
+57792   206        Tonga          TGA           0.0                0  ...                    0.0                 0.0                      0.0            OFC  2018-06-07
 
 [57793 rows x 16 columns]>
 
@@ -141,6 +141,18 @@ dtype: int64
 The number of rows in your dataset are:
 
 57793
+
+
+------------------------------------
+The values in your dataset are:
+
+[[1 'Germany' 'GER' ... 0.0 'UEFA' '1993-08-08']
+ [2 'Italy' 'ITA' ... 0.0 'UEFA' '1993-08-08']
+ [3 'Switzerland' 'SUI' ... 0.0 'UEFA' '1993-08-08']
+ ...
+ [206 'Eritrea' 'ERI' ... 0.0 'CAF' '2018-06-07']
+ [206 'Somalia' 'SOM' ... 0.0 'CAF' '2018-06-07']
+ [206 'Tonga' 'TGA' ... 0.0 'OFC' '2018-06-07']]
 
 
 ------------------------------------
