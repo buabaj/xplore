@@ -16,19 +16,19 @@ def xplore(data):
     print(data.head()) #printing the first 5 entries of the dataset
     print('\n')
 
-    rint('------------------------------------')
+    print('------------------------------------')
     print('The last 5 entries of your dataset are:\n')
     print(data.tail()) #printing the last 5 entries of the dataset
     print('\n')
 
     print('------------------------------------')
-    print('The description of you dataset is:\n')
+    print('The Stats on you dataset is:\n')
     print(data.describe) #printing a descriptipn of the dataset
     print('\n')
 
     print('------------------------------------')
-    print('The total number of null values from individual columns of your data set are:\n')
-    print(data.isnull().sum()) #printing the total number of null values in the dataset
+    print('The Value types of each column are:\n')
+    print(data.dtypes) #printing value types of each column
     print('\n')
 
     print('------------------------------------')
@@ -42,7 +42,17 @@ def xplore(data):
     print('\n')
 
     print('------------------------------------')
+    print('The total number of null values from individual columns of your data set are:\n')
+    print(data.isnull().sum()) #printing the total number of null values in the dataset
+    print('\n')
+
+    print('------------------------------------')
+    print('The number of rows in your dataset are:\n')
+    print(len(data)) #printing number of rows
+    print('\n')
+
+    print('------------------------------------')
 
 
-#data = pd.read_csv('fifa_ranking.csv')
-#xplore(data)
+data = pd.read_csv('fifa_ranking.csv')
+xplore(data)
