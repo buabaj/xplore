@@ -22,7 +22,7 @@ def xplore(data):
     print('\n')
 
     print('------------------------------------')
-    print('The Stats on you dataset is:\n')
+    print('Stats on your dataset:\n')
     print(data.describe) #printing a descriptipn of the dataset
     print('\n')
 
