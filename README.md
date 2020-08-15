@@ -41,8 +41,22 @@ The fist 5 entries of your dataset are:
 
 [5 rows x 16 columns]
 
+
 ------------------------------------
-The description of you dataset is:
+The last 5 entries of your dataset are:
+
+       rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
+57788   206     Anguilla          AIA           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
+57789   206      Bahamas          BAH           0.0  ...                 0.0                      0.0       CONCACAF  2018-06-07
+57790   206      Eritrea          ERI           0.0  ...                 0.0                      0.0            CAF  2018-06-07
+57791   206      Somalia          SOM           0.0  ...                 0.0                      0.0            CAF  2018-06-07
+57792   206        Tonga          TGA           0.0  ...                 0.0                      0.0            OFC  2018-06-07
+
+[5 rows x 16 columns]
+
+
+------------------------------------
+Stats on your dataset:
 
 <bound method NDFrame.describe of        rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
 0         1      Germany          GER           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
@@ -58,6 +72,46 @@ The description of you dataset is:
 57792   206        Tonga          TGA           0.0  ...                 0.0                      0.0            OFC  2018-06-07
 
 [57793 rows x 16 columns]>
+
+
+------------------------------------
+The Value types of each column are:
+
+rank                         int64
+country_full                object
+country_abrv                object
+total_points               float64
+previous_points              int64
+rank_change                  int64
+cur_year_avg               float64
+cur_year_avg_weighted      float64
+last_year_avg              float64
+last_year_avg_weighted     float64
+two_year_ago_avg           float64
+two_year_ago_weighted      float64
+three_year_ago_avg         float64
+three_year_ago_weighted    float64
+confederation               object
+rank_date                   object
+dtype: object
+
+
+------------------------------------
+The shape of your dataset in the order of rows and columns is:
+
+(57793, 16)
+
+
+------------------------------------
+The features of your dataset are:
+
+Index(['rank', 'country_full', 'country_abrv', 'total_points',
+       'previous_points', 'rank_change', 'cur_year_avg',
+       'cur_year_avg_weighted', 'last_year_avg', 'last_year_avg_weighted',
+       'two_year_ago_avg', 'two_year_ago_weighted', 'three_year_ago_avg',
+       'three_year_ago_weighted', 'confederation', 'rank_date'],
+      dtype='object')
+
 
 ------------------------------------
 The total number of null values from individual columns of your data set are:
@@ -80,20 +134,12 @@ confederation              0
 rank_date                  0
 dtype: int64
 
-------------------------------------
-The shape of your dataset in the order of rows and columns is:
-
-(57793, 16)
 
 ------------------------------------
-The features of your dataset are:
+The number of rows in your dataset are:
 
-Index(['rank', 'country_full', 'country_abrv', 'total_points',
-       'previous_points', 'rank_change', 'cur_year_avg',
-       'cur_year_avg_weighted', 'last_year_avg', 'last_year_avg_weighted',
-       'two_year_ago_avg', 'two_year_ago_weighted', 'three_year_ago_avg',
-       'three_year_ago_weighted', 'confederation', 'rank_date'],
-      dtype='object')
+57793
+
 
 ------------------------------------
 ```
