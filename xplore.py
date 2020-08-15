@@ -18,7 +18,7 @@ def xplore(data):
     print('')
 
     print('------------------------------------')
-    print('The total number of missing values from individual columns of your data set are:\n')
+    print('The total number of null values from individual columns of your data set are:\n')
     print(data.isnull().sum())
     print('')
 
@@ -35,5 +35,5 @@ def xplore(data):
     print('------------------------------------')
 
 
-data = pd.read_csv('https://raw.githubusercontent.com/codeheroku/Introduction-to-Machine-Learning/master/Building%20a%20Movie%20Recommendation%20Engine/movie_dataset.csv')
+data = pd.read_csv('fifa_ranking.csv')
 xplore(data)
