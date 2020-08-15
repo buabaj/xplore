@@ -2,7 +2,7 @@
 ---
 xplore is a python package built with Pandas for data scientist or analysts, AI/ML engineers or researchers for exploring features of a dataset in one line of code for quick analysis before data wrangling and feature extraction.
 ---
-# Getting started
+## Getting started
 
 ## Install the package
 ```bash
@@ -23,9 +23,11 @@ data = < Open / Read in your dataset file here >
 ```python
 xplore(data)
 ```
+---
 
 ### Testing xplore
 Navigate to the test.py file after installing the package and run the code in that file to see and understand how xplore works.
+---
 
 ## Sample Output
 ```python
@@ -143,6 +145,8 @@ The number of rows in your dataset are:
 
 ------------------------------------
 ```
+---
+
 ## Contributing to xplore
 Fork and clone this repo if you have any contributions you want to make. 
 Push your commits to a new branch and send a PR when done.
