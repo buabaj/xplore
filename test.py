@@ -2,5 +2,5 @@ import xplore
 import pandas as pd
  
 
-data = pd.read_csv('fifa_ranking.csv')
-xplore(data)
+myData = pd.read_csv('fifa_ranking.csv')
+xplore(myData)

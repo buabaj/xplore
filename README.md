@@ -14,7 +14,7 @@ pip install xplore
 import xplore
 ```
 
-### Assign the file path or URL of your structured dataset to the variable name 'data'
+### Assign the read/open command to the file path or URL of your structured dataset to a variable name 
 ```python
 data = < Open / Read in your dataset file here >
 ```
