@@ -4,7 +4,7 @@ xplore is a python package built with Pandas for data scientist or analysts, AI/
 ---
 ## Getting started
 
-## Install the package
+### Install the package
 ```bash
 pip install xplore
 ```
@@ -165,6 +165,6 @@ Push your commits to a new branch and send a PR when done.
 I'll review your code and merge your PR as soon as possible.
 
 ## Maintainers: 
-[Jerry Buaba](https://www.linkedin.com/in/buabaj/)
-[Labaran Mohammed](https://linkedin.com/in/adam-labaran-111358181)
+[Jerry Buaba](https://www.linkedin.com/in/buabaj/) | 
+[Labaran Mohammed](https://linkedin.com/in/adam-labaran-111358181) | 
 [Benjamin Acquaah](https://linkedin.com/in/benjamin-acquaah-9294aa14b)
