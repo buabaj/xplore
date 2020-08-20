@@ -164,4 +164,7 @@ Fork and clone this repo if you have any contributions you want to make.
 Push your commits to a new branch and send a PR when done.
 I'll review your code and merge your PR as soon as possible.
 
-## Maintainer: [Jerry Buaba](https://www.linkedin.com/in/buabaj/)
+## Maintainers: 
+[Jerry Buaba](https://www.linkedin.com/in/buabaj/)
+[Labaran Mohammed](https://linkedin.com/in/adam-labaran-111358181)
+[Benjamin Acquaah](https://linkedin.com/in/benjamin-acquaah-9294aa14b)
