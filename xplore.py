@@ -32,6 +32,11 @@ def xplore(data):
     print('\n')
 
     print('------------------------------------')
+    print('Info on your Dataset:\n')
+    print(data.info) #printing value types of each column
+    print('\n')
+
+    print('------------------------------------')
     print('The shape of your dataset in the order of rows and columns is:\n')
     print(data.shape) #printing the shape of the dataset
     print('\n')
