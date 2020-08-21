@@ -1,6 +1,6 @@
 # xplore
 ---
-xplore is a python package built with Pandas for data scientist or analysts, AI/ML engineers or researchers for exploring features of a dataset in one line of code for quick analysis before data wrangling and feature extraction.
+xplore is a python package built with Pandas for data scientist or analysts, AI/ML engineers or researchers for exploring features of a dataset in one line of code for quick analysis before data wrangling and feature extraction. You can also choose to generate a more detailed report on the exploration of your dataset upon request.
 ---
 ## Getting started
 

@@ -1,12 +1,14 @@
 #importing the necessary libraries
 import pandas as pd
+from pandas_profiling import ProfileReport
+
 
 #function to handle the data exploration
 def xplore(data):
     #writing the pop-up vscode  guide as a block comment
     '''
-    xplore is a python package for light-weight python projects in data science and analytics, AI and ML.\n
-    The xplore() function takes the arg 'data', which is a variable assigned to the file path/url of a labelled dataset.\n
+    xplore is a python package built with pandas for light-weight python projects in data science and analytics, AI and ML.\n
+    The xplore() function takes the argument of whatever variable assigned to the read file path/url of a labelled dataset.\n
     xplore converts the labelled dataset to a DataFrame and performs some predefined exploratory data analysis on the dataset.
     '''
     #converting the structured data to a dataframe
@@ -60,9 +62,20 @@ def xplore(data):
     print('The values in your dataset are:\n')
     print(data.values) #printing values
     print('\n')
-
+    
     print('------------------------------------')
+    print('\n')
+    print('Do you want to generate a detailed report on the exploration of your dataset?')
+    response = input('[y/n]: ')
+
+    if response == 'y' or 'Yes':
+        prof = ProfileReport(data)
+        prof.to_file(output_file='output.html')
+        print('Your Report has been generated and saved as \'output.html\'')
+    else:
+        print('Process Completed')
 
 
-data = pd.read_csv('fifa_ranking.csv')
-xplore(data)
+
+#data = pd.read_csv('fifa_ranking.csv')
+#xplore(data)
