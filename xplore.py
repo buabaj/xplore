@@ -66,18 +66,24 @@ def xplore(data):
     print('------------------------------------')
     print('\n')
     print('Do you want to generate a detailed report on the exploration of your dataset?')
-    response = input('[y/n]: ')
+    response = input('[y/n]: ').lower()
 
-    if response == 'y' or 'Yes':
+    if response == 'y' or response == 'yes':
+        print("Generating report...", '\n')
         prof = ProfileReport(data)
         prof.to_file(output_file='output.html')
         print('Your Report has been generated and saved as \'output.html\'')
-    elif response == 'n' or 'no':
-        print('Report Generation Terminated')
+
+    elif response == 'n' or response == 'no':
+        # print('Report Generation Terminated')
+        # Adding this line makes it sound like the user was expected to generate a report, if the choose No, just show "Process completed", they have already seen the main info about the dataset
+        print('Process Completed')
+
     else:
         print('Process Completed')
 
 
+df = pd.read_csv('fifa_ranking.csv')
+xplore(df)
 
-data = pd.read_csv('fifa_ranking.csv')
-xplore(data)
+
