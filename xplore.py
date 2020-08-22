@@ -75,15 +75,14 @@ def xplore(data):
         print('Your Report has been generated and saved as \'output.html\'')
 
     elif response == 'n' or response == 'no':
-        # print('Report Generation Terminated')
-        # Adding this line makes it sound like the user was expected to generate a report, if the choose No, just show "Process completed", they have already seen the main info about the dataset
+
         print('Process Completed')
 
     else:
         print('Process Completed')
 
 
-df = pd.read_csv('fifa_ranking.csv')
-xplore(df)
+#df = pd.read_csv('fifa_ranking.csv')
+#xplore(df)
 
 
