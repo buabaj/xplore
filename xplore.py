@@ -72,10 +72,12 @@ def xplore(data):
         prof = ProfileReport(data)
         prof.to_file(output_file='output.html')
         print('Your Report has been generated and saved as \'output.html\'')
+    elif response == 'n' or 'no':
+        print('Report Generation Terminated')
     else:
         print('Process Completed')
 
 
 
-#data = pd.read_csv('fifa_ranking.csv')
-#xplore(data)
+data = pd.read_csv('fifa_ranking.csv')
+xplore(data)
