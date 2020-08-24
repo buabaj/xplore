@@ -80,5 +80,4 @@ class xplore:
         else:
             print('Process Completed')
 
-#df = pd.read_csv('tests/fifa_ranking.csv')
-#xplore(df)
+
