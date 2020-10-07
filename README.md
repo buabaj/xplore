@@ -1,6 +1,6 @@
 # xplore
 ---
-xplore is a python package built with Pandas for data scientist or analysts, AI/ML engineers or researchers for exploring features of a dataset in one line of code for quick analysis before data wrangling and feature extraction. You can also choose to generate a more detailed report on the exploration of your dataset upon request.
+xplore is a python package built with Pandas for data scientists or analysts, AI/ML engineers or researchers for exploring features of a dataset in one line of code for quick analysis before data wrangling and feature extraction. You can also choose to generate a more detailed report on the exploration of your dataset upon request.
 ---
 ## Getting started
 
@@ -32,7 +32,7 @@ Navigate to the test.py file after installing the package and run the code in th
 ## Sample Output
 ```python
 ------------------------------------
-The fist 5 entries of your dataset are:
+The first 5 entries of your dataset are:
 
    rank country_full country_abrv  total_points  ...  three_year_ago_avg  three_year_ago_weighted  confederation   rank_date
 0     1      Germany          GER           0.0  ...                 0.0                      0.0           UEFA  1993-08-08
@@ -157,7 +157,7 @@ dtype: int64
 
 
 ------------------------------------
-The number of rows in your dataset are:
+The number of rows in your dataset is:
 
 57793
 
